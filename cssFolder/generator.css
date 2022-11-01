@@ -1,0 +1,77 @@
+/*.left-side-bar {
+    float: left;
+    width: 45%;
+  }
+
+.right-side-bar {
+    float: right;
+    width: 25%;
+    font-size: large;
+  }*/
+
+img {
+    width: 10%;
+    margin: 10px;
+}
+
+/*.GeneratorButton {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 405px;
+    
+  }
+
+.memes{
+  grid-area: memes;
+}
+
+.GeneratorButton{
+  grid-area: GeneratorButton;
+}
+
+.history{
+  grid-area: history;
+}*/
+
+#parent-div{
+display: grid;
+grid-template-areas: 'memes button history';
+}
+
+#memes{
+grid-area: "memes";
+grid-template-areas:
+'meme1'
+'meme2'
+'meme3'
+'meme4'
+}
+
+#meme1{
+  grid-area: "memeNumbers";
+  width: 95%;
+
+}
+
+#QuoteGenerator{
+  height: 60%;
+  width: 400px;
+  font-size: x-large;
+  padding: 10px;  
+  justify-content: center;
+}
+
+#ButtonGenerator{
+  grid-area: "button";   
+  justify-content: center;
+}
+
+#history{
+  grid-area: "history";
+  font-size: larger;
+  
+  }
